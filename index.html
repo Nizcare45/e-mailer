@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Nizcare Corporate Wellness</title>
+
+  <!-- <link rel="stylesheet" href="nizcare.css"> -->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background: #ffffff;
+      color: #333333;
+    }
+    
+    .container {
+      width: 90%;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    header {
+      background: white;
+      text-align: center;
+      margin-bottom: 10px;
+      background-color:#1ea69a ;
+    }
+    
+    h1 {
+      font-size: 28px;
+      
+      color: #ffffff;
+    }
+    
+    .main-image1 {
+      width: 150px;
+      height: 50px;
+      margin-top: 15px;
+    }
+    .main-image {
+      width: 100%;
+      height: auto;
+      margin-top: 15px;
+    }
+    
+    h3 {
+      color: #1ea69a;
+      font-size: 22px;
+      margin-top: 30px;
+    }
+    .section-title {
+      font-size: 22px;
+      color: #1ea69a;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #1ea69a;
+      padding-bottom: 5px;
+      display: flex;
+      justify-content: center;
+    }
+    .package-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .package-row {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    .package-row-3 .package {
+      width: calc(33.33% - 15px);
+    }
+    .package-row-2 .package {
+      width: calc(50% - 10px);
+    }
+    .package {
+      background-color: #f0fffd;
+      border-radius: 8px;
+      padding: B15px;
+      box-shadow: 0 3px 10px rgba(30, 166, 154, 0.1);
+    }
+    .package-title {
+      font-size: 18px;
+      color: #1ea69a;
+      margin-top: 0;
+    }
+    .package ul {
+      padding-left: 20px;
+      margin-bottom: 0;
+    }
+    .package li {
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+    h2{
+      color: #1da69a;
+      font-size: 18px;
+      margin-top: 20px;
+    }
+    
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background: #ffffff;
+      color: #333;
+    }
+    .Wellness-Services {
+      border: none;
+      height: 2px;
+      background-color: #1da69a; 
+    }
+    
+    .wellness-section {
+      padding: 40px;
+      text-align: center;
+      background-color: #f9f9f9;
+    }
+    
+    .wellness-section h2 {
+      color: #1da69a;
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+    
+    
+    .row {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+    
+    
+    .card {
+      background: #ffffff;
+      border: 1px solid #e0e0e0;
+      border-radius: 12px;
+      padding: 20px;
+      width: 40%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      text-align: left;
+    }
+    
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+    
+    .card h2 {
+      color: #1da69a;
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+    
+    .card h3 {
+      color: #1da69a;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+    
+    .card ul {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+    
+    .card ul li {
+      margin-bottom: 10px;
+      font-size: 14px;
+      line-height: 1.5;
+      position: relative;
+    }
+    
+    
+    .card ul li::before {
+      content: "✔️";
+      position: absolute;
+      left: -20px;
+      color: #1da69a;
+    }
+    
+    .image-row {
+      display: flex;
+      justify-content: center; 
+      gap: 20px; 
+    }
+    
+    .image-row img {
+      width: 290px; 
+      height: auto; 
+    }
+    .trackers {
+    text-align: center;
+    margin-top: 60px;
+    }
+    .tracker-icon {
+    background-color: #f0fffd;
+    border: 2px solid #57bcb3;
+    border-radius: 50%;
+    padding: 10px;
+    }
+    .image-container {
+    text-align: center;
+    }
+    
+    .image-container img {
+    width: 500px; 
+    height: auto;
+    }
+    .testimonials {
+    background-color: #f0fffd;
+    padding: 20px;
+    border-radius: 8px;
+    
+    }
+    .testimonial {
+    font-style: italic;
+    margin-bottom:10px;
+    padding: 15px;
+    background: white;
+    
+    
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(30, 166, 154, 0.1);
+    border-left: 3px solid #1ea69a;
+    }
+    .client-name {
+    font-weight: bold;
+    text-align: right;
+    color: #1ea69a;
+    }
+    .cta {
+    text-align: center;
+    margin: 30px 0;
+    }
+    
+    blockquote {
+      font-style: italic;
+      background: #f9f9f9;
+      padding: 10px;
+      border-left: 5px solid #1da69a;
+      margin: 10px 0;
+      text-align: center;
+      
+    }
+    
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      
+    }
+    
+    .cta-button {
+      background: #1da69a;
+      color: #ffffff;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    .footer {
+      background-color: #1da69a;
+      color: white;
+      width: 565px;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      
+    }
+    .social-icons {
+      margin: 15px 0;
+    }
+    .social-icon {
+      width: 32px;
+      height: 32px;
+      margin: 0 5px;
+    }
+    
+    footer {
+      text-align: center;
+      margin-top: 30px;
+    }
+    
+    .cta-button {
+      background: #ffffff;
+      color: #1da69a;
+      padding: 8px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .cta-button1 {
+      background: #1da69a;
+      color: #fff;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 600;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      
+    }
+    
+    .email-signature {
+      padding: 15px;
+      background-color: #ffffff;
+      border: 1px solid #e0e0e0;
+      width: 95%;
+      border-radius: 15px;
+    }
+    
+    .name {
+      font-size: 18px;
+      color: #1da69a;
+      font-weight: bold;
+      margin: 0 0 5px 0;
+    }
+    
+    .title {
+      font-size: 14px;
+      color: #333333;
+      margin: 0 0 10px 0;
+    }
+    
+    .contact {
+      font-size: 14px;
+      color: #333333;
+      margin: 0;
+    }
+    
+    .contact a {
+      color: #1da69a;
+      text-decoration: none;
+    }
+    
+    .contact a:hover {
+      text-decoration: underline;
+    }
+    
+    
+    @media only screen and (max-width: 600px) {
+    .package-row-3 .package, 
+    .package-row-2 .package,
+    .service-box {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .package-row, .service-row {
+        margin-bottom: 0;
+    }
+    }
+    </style>
+</head>
+<body>
+  <div class="container">
+      <header>
+      <img src=nizcare-logo.png alt="Nizcare logo" class="main-image1">
+      <h1>Elevate Your Employee Wellness Program with Nizcare</h1>
+      <img src=Bankingsector.jpg alt="Employees Working" class="main-image">
+    </header>
+
+    <section class="intro">
+      <p>At Nizcare, we understand that your employees are your most valuable asset. That's why we've designed
+        comprehensive health check-up packages specifically for your Banking sector employees.</p>
+    </section>
+    <div class="section">
+      <h2 class="section-title">Health Checkup Packages</h2>
+      <div class="package-container">
+        
+        <div class="package-row package-row-3">
+          <div class="package">
+            <h3 class="package-title">Package 1: Basic</h3>
+            <ul>
+              <li>Physical Examination</li>
+              <li>CBC, Blood Sugar</li>
+              <li>Vision Testing</li>
+              <li>Hearing Test</li>
+              <li>Blood prressure check-up</li>
+            </ul>
+          </div>
+          <div class="package">
+            <h3 class="package-title">Package 2: Standard</h3>
+
+            <ul>
+              <li>Physical Examination</li>
+              <li>CBC, Blood Sugar, LFT, KFT</li>
+              <li>Chest X-Ray, ECG</li>
+              <li>Blood pressure check-up</li>
+              <li>Lipid Profile</li>
+            </ul>
+          </div>
+          <div class="package">
+            <h3 class="package-title">Package 3: Advanced</h3>
+            <ul>
+              <li>Comprehensive Physical</li>
+              <li>CBC, Blood Sugar, LFT, KFT, Lipid Profile</li>
+              <li>Vision testing,hearing Test </li>
+              <li>Blood pressure check-up</li>
+              <li>ergonomics</li>
+              <li>Stress Assessment</li>
+            </ul>
+          </div>
+        </div>
+         <div class="package-row package-row-2">
+          <div class="package">
+            <h3 class="package-title">Package 4: Executive</h3>
+            <ul>
+              <li>Comprehensive Physical</li>
+              <li>CBC, Blood Sugar, LFT, KFT, Lipid Profile, TFT</li>
+              <li>Vision testing,hearing Test</li>
+              <li>Blood pressure check-up</li>
+              <li>Stress Test</li>
+              <li>Pulmonary Function Test</li>
+              <li>ECG</li>
+            </ul>
+          </div>
+          <div class="package">
+            <h3 class="package-title">Package 5: Comprehensive</h3>
+            <ul>
+              <li>Comprehensive Physical</li>
+              <li>CBC, Blood Sugar, LFT, KFT, Lipid Profile, TFT, Cancer Screening</li>
+              <li>Vision testing,hearing Test</li>
+              <li>Pulmonary Function Test</li>
+              <li>Blood pressure check-up</li>
+              <li>Psychological Evaluation</li>
+              <li>Stress Assessment</li>
+              <li>ECG</li>
+              <li>Nutrition wellness counseling</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <h2 class="section-title">Wellness Services </h2>
+
+
+    <div class="row">
+      <div class="card">
+        <h3>Primary Health Care</h3>
+        <ul>
+          <li>Unlimited 24/7 GP tele consultation</li>
+          <li>Smart diet planner</li>
+          <li>Dental health</li>
+          <li>Mental checkup</li>
+          <li>Eye checkup</li>
+          <li>Diabetic management</li>
+          <li>Chronic care programs</li>
+          <li>Elder care programs</li>
+          <li>Healthy motherhood program</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>OPD Services</h3>
+        <ul>
+          <li>Speciality consultation online</li>
+          <li>In-person consultation at clinic and hospitals</li>
+          <li>Second opinion for surgery</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card">
+        <h3>Corporate Services</h3>
+        <h3>12-Month Wellness Engagement</h3>
+        <ul>
+          <li>Webinars on topics</li>
+          <li>Dental & Eye camps</li>
+          <li>Physical activities (Yoga/Zumba)</li>
+          <li>Team building activities</li>
+          <li>Art therapy sessions</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>For HR or Employer</h3>
+        <ul>
+          <li>Corporate HR dashboards</li>
+          <li>Employee health analytics</li>
+          <li>Health scorecard of employees</li>
+          <li>HRA (Health Risk Assessment)</li>
+        </ul>
+      </div>
+    </div>
+
+    </section>
+    <h2 class="section-title">App and Dashboard Integration</h2>
+    <div class="image-row">
+
+      <img src=Dashboard.jpeg alt="Image 1">
+      <img src=dashboard1.jpeg alt="Image 2">
+    </div>
+
+    <div class="trackers">
+      <h2 class="section-title">Free Health Trackers</h2>
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px;">
+        <div style="text-align: center; width: 80px;">
+          <div class="tracker-icon">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path fill="#1ea69a"
+                d="M15.74,10.27l-3.24,4l-1.16,1.5c-.15.17-.4.21-.61.16-.53-.1-1.03-.47-1.19-1-.17-.62,.05-1.28,.51-1.72l2.78-2.63c.42-.31,.49-.98,.14-1.4-.21-.25-.53-.4-.86-.36-.33,.03-.63,.21-.82,.48l-4.16,5.99c-.33,.49-.23,1.17,.22,1.55,.21,.17,.45,.27,.71,.3,.36,.03,.71-.11,.96-.37l1.1-1.15,.78-5.77c.06-.42,.4-.78,.83-.88,.47-.11,.93,.06,1.19,.39,.27,.37,.33,.85,.15,1.27,0,0-.46,1.3-.46,1.3,0,0,1.48-1.99,1.48-1.99,.41-.6,1.22-.76,1.84-.35,.11,.08,.2,.17,.28,.28,.39,.6,.23,1.39-.31,1.81l-1.8,1.41c.51-.03,1.03,.13,1.45,.49,.5,.42,.59,1.17,.2,1.72l-.91,1.29,.06-.06c.4-.44,1.07-.47,1.51-.07,.15,.13,.26,.3,.3,.5,.11,.44-.08,.9-.46,1.14l-1.45,1.01c-.08,.05-.16,.09-.24,.12-.3,.11-.61,.17-.92,.17-1.3,.02-2.39-1.05-2.41-2.35,0-.08,0-.16,.01-.24l.08-1.18c-.14,.17-.28,.34-.43,.5-.89,.89-2.31,.92-3.23,.06-.08-.07-.15-.15-.22-.23-.68-.78-.69-1.95-.01-2.71l-.68,.51c-.83,.58-1.98,.45-2.68-.31-.28-.3-.44-.67-.45-1.05-.03-.75,.37-1.47,1.05-1.88l2.43-1.78c.76-.56,1.69-.83,2.63-.77l1.89,.13c1.93,.13,3.63,1.27,4.43,2.98-.06-.05-.11-.09-.15-.14-.81-.87-.77-2.22,.1-3.03,.8-.75,2.01-.81,2.88-.16,.17,.13,.32,.29,.44,.48,.5,.78,.41,1.79-.15,2.47l-2.31,2.85Z" />
+            </svg>
+          </div>
+          <p>Steps</p>
+        </div>
+        <div style="text-align: center; width: 80px;">
+          <div class="tracker-icon">
+           
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path fill="#1ea69a"
+                d="M12.5,3.25c-4.97,0-9,4.03-9,9s4.03,9,9,9,9-4.03,9-9-4.03-9-9-9Zm0,16c-3.86,0-7-3.14-7-7s3.14-7,7-7,7,3.14,7,7-3.14,7-7,7Z" />
+              <path fill="#1ea69a"
+                d="M15.42,10.36c.21,.53,.33,1.09,.33,1.69,0,2.49-2.01,4.5-4.5,4.5-2.11,0-3.88-1.45-4.36-3.42-.08-.31,.11-.62,.42-.7,.31-.08,.62,.11,.7,.42,.35,1.43,1.63,2.45,3.11,2.45,1.77,0,3.21-1.43,3.22-3.21,0-.42-.09-.83-.25-1.21-.13-.29,0-.63,.29-.76,.29-.13,.63,0,.76,.29,0,0,.03,.08,.03,.08,.06,.17,.18,.53,.25,.87Z" />
+              <path fill="#1ea69a"
+                d="M10.41,7.71c.39-.15,.83,.05,.98,.44,0,0,.03,.08,.03,.08,.06,.17,.18,.53,.25,.87,.21,.53,.33,1.09,.33,1.69,.21-.53,.33-1.09,.33-1.69,0-.42-.08-.83-.25-1.21-.13-.29,0-.63,.29-.76,.3-.12,.64,.01,.76,.31,0,0,0,.01,0,.02,0,0,.03,.08,.03,.08,.06,.17,.18,.53,.25,.87,.21,.53,.33,1.09,.33,1.69,0,2.49-2.01,4.5-4.5,4.5-2.11,0-3.88-1.45-4.36-3.42-.08-.31,.11-.62,.42-.7,.31-.08,.62,.11,.7,.42,.35,1.43,1.63,2.45,3.11,2.45,1.77,0,3.21-1.43,3.22-3.21,0-.42-.09-.83-.25-1.21-.13-.29,0-.63,.29-.76Z" />
+            </svg>
+          </div>
+          <p>Sleep</p>
+        </div>
+        <div style="text-align: center; width: 80px;">
+          <div class="tracker-icon">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path fill="#1ea69a"
+                d="M19,3H5C3.9,3,3,3.9,3,5v14c0,1.1,0.9,2,2,2h14c1.1,0,2-0.9,2-2V5C21,3.9,20.1,3,19,3z M8,17c-0.55,0-1-0.45-1-1v-5 c0-0.55,0.45-1,1-1s1,0.45,1,1v5C9,16.55,8.55,17,8,17z M12,17c-0.55,0-1-0.45-1-1V8c0-0.55,0.45-1,1-1s1,0.45,1,1v8 C13,16.55,12.55,17,12,17z M16,17c-0.55,0-1-0.45-1-1v-2c0-0.55,0.45-1,1-1s1,0.45,1,1v2C17,16.55,16.55,17,16,17z" />
+            </svg>
+          </div>
+          <p>Nutrition</p>
+        </div>
+        <div style="text-align: center; width: 80px;">
+          <div class="tracker-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path fill="#1ea69a"
+                d="M12,2c-5.33,4.55-8,8.48-8,11.8C4,18.78,7.4,22,12,22s8-3.22,8-8.2C20,10.48,17.33,6.55,12,2z M12,20 c-3.35,0-6-2.57-6-6.2c0-2.34,1.95-5.44,6-9.14c4.05,3.7,6,6.79,6,9.14C18,17.43,15.35,20,12,20z M7.83,14c0.37,0,0.67,0.26,0.74,0.62 c0.41,2.22,2.28,2.98,3.64,2.87c0.43-0.02,0.79,0.32,0.79,0.75c0,0.4-0.32,0.73-0.72,0.75c-2.13,0.13-4.62-1.09-5.19-4.12 C7.01,14.42,7.37,14,7.83,14z" />
+            </svg>
+          </div>
+          <p>Water</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+  <div class="container">
+    <div class="client-logos">
+      <h2 class="section-title">Trusted by Industry Leaders</h2>
+      <div class="image-container">
+        <img src=clients.jpeg alt="Centered Image">
+      </div>
+    </div>
+    <div class="testimonials">
+      <h2 class="section-title">What Our Clients Say</h2>
+      <div class="testimonial">
+        "Nizcare has transformed our employee wellness program. We've seen decreased absenteeism and increased
+        productivity since implementing their comprehensive packages."
+        <p class="client-name">- HR Director, Leading Tech Company</p>
+      </div>
+      <div class="testimonial">
+        "The health analytics dashboard has been invaluable for understanding our company's health trends and making
+        data-driven wellness decisions."
+        <p class="client-name">- CEO, Multinational Corporation</p>
+      </div>
+    </div>
+    <div class="cta">
+      <h2 style="color: #1ea69a; font-size: 26px;">Ready to transform your employee wellness program?</h2>
+
+    </div>
+  </div>
+
+  <footer>
+    <a href=https://calendly.com/sabari-nizcare-mamce/new-meeting?month2025-04 class="cta-button1">Book a Free Demo</a>
+  </footer>
+
+  </div>
+  <div class="container">
+    <div class="footer" style="border-radius: 15px;">
+      <p>Nizcare Healthcare Solutions</p>
+      <div class="social-icons">
+        <img src=facebooklogo.webp alt="Facebook" class="social-icon" />
+        <img src=linkedinlogo.jpg alt="LinkedIn" class="social-icon" />
+        <img src=instagramlogo.jpg alt="Instagram" class="social-icon" />
+        <footer>
+          <a href=https://wa.me/9150036313?text=Hi%20I%20am%20from%20bank%20sector%20want%20to%20know%20more class="cta-button">Contact</a>
+        </footer>
+      </div>
+      <p>© 2025 Nizcare.All rights reserved.</p>
+      <div class="email-signature">
+        <p class="name">Megha Jess Mathew</p>
+        <p class="title">Assistant Manager - Operations & Partnerships</p>
+        <p class="contact">
+          📞 +91-91507 03313 | 🌍 <a href="http://www.nizcare.com" target="_blank">www.nizcare.com</a>
+        </p>
+      </div>
+      
+    </div>
+  </div>
+  </div>
+</body>
+</html>
